@@ -9,23 +9,54 @@ $bootstrap-sass-asset-helper: false;
    Base
    ========================================================================== */
 
-body { }
-
-
 
 /* ==========================================================================
    Header
    ========================================================================== */
 
-.banner { }
+$banner-top-margin: 25px;
 
+.banner {
+    border-top: 1px solid #E7E7E7;
+    margin-top: $banner-top-margin;
+    padding-left: 150px;
+}
+
+div.brand {
+    height: 50px;
+    width: 50px;
+}
+
+a.brand {
+    display: block;
+    background: url(../img/logo.png) no-repeat;
+    position: relative;
+    left: -150px;
+    top: -$banner-top-margin;
+    text-indent: -9999px;
+    width: 150px;
+    height: 150px;
+}
+
+
+/* ==========================================================================
+   Adminbar
+   ========================================================================== */
+
+$adminbar-height: 32px;
+
+body.admin-bar .banner, body.admin-bar .content {
+    margin-top: $adminbar-height + $banner-top-margin;
+}
 
 
 /* ==========================================================================
    Content
    ========================================================================== */
 
-.content { }
+.content { 
+    margin-left: 150px;
+}
 
 
 
