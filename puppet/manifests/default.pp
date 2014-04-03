@@ -29,7 +29,7 @@ class {
 apache::vhost { 
 	'localhost':
 		port    => '80',
-		docroot => '/home/vagrant/www',
+		docroot => '/home/vagrant/www/web',
 }
 class { 'apache::mod::rewrite': }
 
