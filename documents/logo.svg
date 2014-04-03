@@ -23,11 +23,11 @@
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.55553691"
-     inkscape:cx="-60.466675"
-     inkscape:cy="378.10465"
+     inkscape:zoom="1.1110738"
+     inkscape:cx="52.229941"
+     inkscape:cy="574.08544"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -61,7 +61,10 @@
        sodipodi:rx="220"
        sodipodi:ry="220"
        d="m 605.71429,560.93359 a 220,220 0 1 1 -440,0 220,220 0 1 1 440,0 z"
-       transform="matrix(0.85361158,0,0,0.85361158,60.157329,95.164624)" />
+       transform="matrix(0.85361158,0,0,0.85361158,-527.56239,-1.1386077)"
+       inkscape:export-filename="/home/will/projects/clyde/documents/logo.png"
+       inkscape:export-xdpi="35.86203"
+       inkscape:export-ydpi="35.86203" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot3763"
@@ -75,14 +78,17 @@
          id="flowPara3769">GG</flowPara></flowRoot>    <text
        xml:space="preserve"
        style="font-size:70px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:3px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#999999;fill-opacity:1;stroke:none;font-family:PaloAlto;-inkscape-font-specification:PaloAlto Heavy"
-       x="245.47757"
-       y="593.79071"
+       x="-342.24216"
+       y="497.48749"
        id="text3771"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/will/projects/clyde/documents/logo.png"
+       inkscape:export-xdpi="35.86203"
+       inkscape:export-ydpi="35.86203"><tspan
          sodipodi:role="line"
          id="tspan3773"
-         x="245.47757"
-         y="593.79071"
+         x="-342.24216"
+         y="497.48749"
          style="font-size:63px">GARAGE</tspan></text>
     <g
        id="g3055"
@@ -103,7 +109,10 @@
          id="text3775"
          style="font-size:40px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:12px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#f2f2f2;fill-opacity:1;stroke:none;font-family:PaloAlto;-inkscape-font-specification:PaloAlto Heavy"
          xml:space="preserve"
-         transform="translate(47.299123,157.57203)"><textPath
+         transform="translate(-534.89907,286.47962)"
+         inkscape:export-filename="/home/will/projects/clyde/documents/logo.png"
+         inkscape:export-xdpi="35.86203"
+         inkscape:export-ydpi="35.86203"><textPath
            id="textPath3025"
            xlink:href="#path3005-9"
            style="font-size:50px;letter-spacing:12px;fill:#f2f2f2;fill-opacity:1">PLACE</textPath></text>
@@ -127,7 +136,10 @@
          id="text3028"
          style="font-size:40px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:3px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#f2f2f2;fill-opacity:1;stroke:none;font-family:PaloAlto;-inkscape-font-specification:PaloAlto Heavy"
          xml:space="preserve"
-         transform="translate(1.0430229,0.0327611)"><textPath
+         transform="translate(-612.31722,-135.71007)"
+         inkscape:export-filename="/home/will/projects/clyde/documents/logo.png"
+         inkscape:export-xdpi="35.86203"
+         inkscape:export-ydpi="35.86203"><textPath
            id="textPath3038"
            xlink:href="#path3005"
            style="font-size:50px;line-height:125%;letter-spacing:3px;fill:#f2f2f2;fill-opacity:1"><tspan
