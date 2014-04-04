@@ -69,7 +69,7 @@
             "display_errors=off",
             "short_open_tag=off"
         ]
-     }
+    },
     "installer-paths": {
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
