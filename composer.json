@@ -62,6 +62,14 @@
     "vlucas/phpdotenv": "~1.0.6"
   },
   "extra": {
+    "heroku": {
+        "document-root": "web",
+        "php-config": [
+            "date.timezone=America/Denver",
+            "display_errors=off",
+            "short_open_tag=off"
+        ]
+     }
     "installer-paths": {
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
