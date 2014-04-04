@@ -64,6 +64,7 @@
   "extra": {
     "heroku": {
         "document-root": "web",
+        "index": "web/index.php",
         "php-config": [
             "date.timezone=America/Denver",
             "display_errors=off",

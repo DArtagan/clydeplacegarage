@@ -14,7 +14,7 @@ $bootstrap-sass-asset-helper: false;
    Header
    ========================================================================== */
 
-$banner-top-margin: 25px;
+$banner-top-margin: 37px;
 $nav-height: 50px; 
 
 .banner {
@@ -32,6 +32,11 @@ $nav-height: 50px;
 
 
     .navbar-nav {
+        & > li > a {
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
+
         .current_page_item {
             background-color: #E7E7E7;
             color: #55555;
@@ -40,7 +45,7 @@ $nav-height: 50px;
 }
 
 div.brand {
-    height: 50px;
+    height: 35px;
     width: 0px;
 }
 
