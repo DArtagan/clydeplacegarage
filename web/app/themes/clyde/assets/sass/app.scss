@@ -69,10 +69,12 @@ a.brand {
 $adminbar-height: 32px;
 
 body.admin-bar {
-    .banner, .content {
+    .banner {
         margin-top: $adminbar-height + $banner-top-margin;
     }
-
+    .content {
+        margin-top: $adminbar-height + $banner-top-margin + $nav-height;
+    }
     &.page-parent .content, &.page-child .content {
         margin-top: $adminbar-height + $banner-top-margin + $nav-height*2;
     }
