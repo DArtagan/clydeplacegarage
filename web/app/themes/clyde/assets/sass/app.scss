@@ -15,16 +15,33 @@ $bootstrap-sass-asset-helper: false;
    ========================================================================== */
 
 $banner-top-margin: 25px;
+$nav-height: 50px; 
 
 .banner {
     border-top: 1px solid #E7E7E7;
     margin-top: $banner-top-margin;
     padding-left: 150px;
+
+    > .container > nav {
+        margin: 0px 30px;
+
+        &:nth-of-type(even) {
+            border-top: 1px solid #E7E7E7;
+        }
+    }
+
+
+    .navbar-nav {
+        .current_page_item {
+            background-color: #E7E7E7;
+            color: #55555;
+        }
+    }
 }
 
 div.brand {
     height: 50px;
-    width: 50px;
+    width: 0px;
 }
 
 a.brand {
@@ -45,9 +62,16 @@ a.brand {
 
 $adminbar-height: 32px;
 
-body.admin-bar .banner, body.admin-bar .content {
-    margin-top: $adminbar-height + $banner-top-margin;
+body.admin-bar {
+    .banner, .content {
+        margin-top: $adminbar-height + $banner-top-margin;
+    }
+
+    &.page-parent .content, &.page-child .content {
+        margin-top: $adminbar-height + $banner-top-margin + $nav-height*2;
+    }
 }
+
 
 
 /* ==========================================================================
@@ -55,10 +79,12 @@ body.admin-bar .banner, body.admin-bar .content {
    ========================================================================== */
 
 .content { 
-    margin-left: 150px;
+    margin: $banner-top-margin + $nav-height -15px 0px 150px;
+
+    body.page-parent &, body.page-child &  {
+        margin: $banner-top-margin + $nav-height*2 -15px 0px 150px;
+    }
 }
-
-
 
 /* ==========================================================================
    Primary Content
