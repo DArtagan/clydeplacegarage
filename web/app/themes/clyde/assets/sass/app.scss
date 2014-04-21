@@ -80,6 +80,10 @@ body.admin-bar {
     }
 }
 
+#wpadminbar {
+    z-index: 1000;
+}
+
 
 
 /* ==========================================================================
@@ -102,6 +106,10 @@ body.admin-bar {
 
 /* Gallery Shortcode */
 .gallery-row { padding: 15px 0; }
+
+body.home main.main .page-header {
+    display: none;
+}
 
 
 
@@ -129,7 +137,9 @@ body.admin-bar {
    Footer
    ========================================================================== */
 
-.content-info { }
+.content-info {
+    margin-top: 50px;
+}
 
 
 
