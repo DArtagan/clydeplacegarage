@@ -16,6 +16,7 @@ $bootstrap-sass-asset-helper: false;
 
 $banner-top-margin: 37px;
 $nav-height: 36px; 
+$logo-height: 150px;
 
 .banner {
     border-top: 1px solid #E7E7E7;
@@ -86,7 +87,12 @@ body.admin-bar {
    ========================================================================== */
 
 .content { 
-    margin: $banner-top-margin + $nav-height -15px 0px 150px;
+    margin-top: $logo-height + 30px;
+    
+    @media (min-width: $screen-sm-min) {
+        margin-top: $banner-top-margin + $nav-height + 20px;
+        margin-left: 150px;
+    }
 
     body.page-parent &, body.page-child &  {
         margin: $banner-top-margin + $nav-height*2 -15px 0px 150px;
