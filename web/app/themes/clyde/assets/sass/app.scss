@@ -68,6 +68,7 @@ a.brand {
    ========================================================================== */
 
 $adminbar-height: 32px;
+$adminbar-mobile-height: 46px;
 
 body.admin-bar {
     .banner {
@@ -81,17 +82,21 @@ body.admin-bar {
     }
 }
 
+body #wpadminbar {
+    z-index: 2000 !important;
+}
 
 /* ==========================================================================
    Content
    ========================================================================== */
 
 .content { 
-    margin-top: $logo-height + 30px;
+    margin-top: $banner-top-margin + $nav-height + 20px;
+    margin-left: 150px;
     
-    @media (min-width: $screen-sm-min) {
-        margin-top: $banner-top-margin + $nav-height + 20px;
-        margin-left: 150px;
+    @media (max-width: $screen-sm-min) {
+        margin-top: $logo-height + 30px;
+        margin-left: auto;
     }
 
     body.page-parent &, body.page-child &  {
