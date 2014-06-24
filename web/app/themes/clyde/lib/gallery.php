@@ -40,8 +40,8 @@ function roots_gallery($attr) {
     'itemtag'    => '',
     'icontag'    => '',
     'captiontag' => '',
-    'columns'    => 4,
-    'size'       => 'thumbnail',
+    'columns'    => 3,
+    'size'       => 'large',
     'include'    => '',
     'exclude'    => '',
     'link'       => ''
