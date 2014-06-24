@@ -102,9 +102,11 @@ body #wpadminbar {
         margin: $banner-top-margin + $nav-height*2 -15px 0px 150px;
     }
 
-    div.gallery > .gallery-row > div {
+    div.gallery div.gallery-cell {
         border: 1px solid #dddddd;
         border-radius: 4px;
+        margin: 3px 10px;
+        padding: 0px;
         transition: all 0.2s ease-in-out 0s;
 
         a.img-thumbnail {
@@ -114,6 +116,7 @@ body #wpadminbar {
 
         div.caption {
             margin: 0px 6px 8px;
+            text-align: center;
         }
     }
 }
