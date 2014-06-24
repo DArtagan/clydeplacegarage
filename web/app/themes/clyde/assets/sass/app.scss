@@ -101,6 +101,20 @@ body #wpadminbar {
     body.page-parent &, body.page-child &  {
         margin: $banner-top-margin + $nav-height*2 -15px 0px 150px;
     }
+
+    div.gallery > .gallery-row > div {
+        border: 1px solid #dddddd;
+        border-radius: 4px;
+        display: block;
+        margin-bottom: 22px;
+        padding: 4px;
+        transition: all 0.2s ease0in-out 0s;
+
+        a.img-thumbnail {
+            border: none;
+            margin-bottom: 0.5em;
+        }
+    }
 }
 
 /* ==========================================================================
