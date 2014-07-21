@@ -102,21 +102,36 @@ body #wpadminbar {
         margin: $banner-top-margin + $nav-height*2 -15px 0px 150px;
     }
 
-    div.gallery div.gallery-cell {
-        border: 1px solid #dddddd;
-        border-radius: 4px;
-        margin: -7px 0px;
-        padding: 0px;
-        transition: all 0.2s ease-in-out 0s;
+    main.main {
+        .thumbnail, a.thumbnail img {
+            max-width: 100%;
+            height: auto;
+            width: auto;
+            margin-bottom: auto;
+        } 
 
-        a.img-thumbnail {
-            border: none;
-            margin-bottom: 0.5em;
+        figure.thumbnail.alignleft, figure.thumbnail.alignright, img.alignleft, img.alignright {
+            margin: 1em;
         }
 
-        div.caption {
-            margin: 0px 6px 8px;
-            text-align: center;
+        img, div.gallery-cell {
+            border: 1px solid #dddddd;
+            border-radius: 4px;
+            margin: 0px;
+            padding: 4px;
+            transition: all 0.2s ease-in-out 0s;
+        }
+
+        figure.thumbnail img, div.gallery-cell img, div.gallery-cell a {
+            border: none;
+            padding: 0px;
+        }
+
+        div.gallery-cell {
+            div.caption {
+                margin: 0px 6px 8px;
+                text-align: center;
+            }
         }
     }
 }
