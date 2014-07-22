@@ -1,7 +1,7 @@
 <header class="banner navbar navbar-default navbar-fixed-top" role="banner">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navbar-collapse">
+      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-offcanvas">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -12,7 +12,7 @@
       </div>
     </div>
 
-    <div class="sidebar-offcanvas">
+    <div class="sidebar-offcanvas showhide">
       <nav class="collapse navbar-collapse showhide" role="navigation">
         <?php
           if (has_nav_menu('primary_navigation')) :
