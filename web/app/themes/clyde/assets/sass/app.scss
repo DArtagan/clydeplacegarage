@@ -184,7 +184,6 @@ body.home main.main .page-header {
         } 
 
         figure.thumbnail.alignleft, figure.thumbnail.alignright, figure.thumbnail.aligncenter, figure.thumbnail.alignnone, img.alignleft, img.alignright, img.aligncenter, img.alignnone {
-            margin: 1em;
             @media (max-width: $screen-xs-max) {
                 margin: 15px auto !important;
                 width: 100% !important;
@@ -193,6 +192,10 @@ body.home main.main .page-header {
                     width: 100%;
                 }
             }
+        }
+
+        figure.thumbnail.aligncenter, img.aligncenter {
+            margin: 1em auto;
         }
 
         .caption {
