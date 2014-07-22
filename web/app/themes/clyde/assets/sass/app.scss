@@ -67,6 +67,7 @@ a.brand {
     .banner {
         margin-top: $logo-height / 2 - $nav-mobile-height / 2 + $banner-top-margin;
         padding-left: 10px;
+        position: absolute;
     }
 
     a.brand {
@@ -86,7 +87,7 @@ $offcanvas-offset: 60%;
         right: 0;
     }
     .row-offcanvas-right .sidebar-offcanvas {
-        right: 0;
+        right: -$offcanvas-offset;
         transition: all 0.25s ease 0s;
     }
     .row-offcanvas-right.active {
@@ -95,8 +96,9 @@ $offcanvas-offset: 60%;
     .sidebar-offcanvas {
         height: 100%;
         margin: 0px;
+        margin-top: -1px;
         position: absolute;
-        top: $nav-mobile-height / 2 + $logo-height / 2 + $content-top-buffer;
+        top: 0px;
         width: $offcanvas-offset;
         overflow: visible;
     }
