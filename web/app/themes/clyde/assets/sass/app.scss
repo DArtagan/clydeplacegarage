@@ -189,8 +189,8 @@ body.home main.main .page-header {
 
         @media (max-width: $screen-xs-max) {
             figure.thumbnail {
-                margin: auto;
-                width: 100%;
+                margin: auto !important;
+                width: 100% !important;
 
                 img {
                     width: 100%;
