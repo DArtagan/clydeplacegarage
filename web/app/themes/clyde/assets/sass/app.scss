@@ -186,6 +186,7 @@ body.home main.main .page-header {
         figure.thumbnail.alignleft, figure.thumbnail.alignright, figure.thumbnail.aligncenter, figure.thumbnail.alignnone, img.alignleft, img.alignright, img.aligncenter, img.alignnone {
             @media (max-width: $screen-xs-max) {
                 margin: 15px auto !important;
+                height: auto !important;
                 width: 100% !important;
 
                 img {
