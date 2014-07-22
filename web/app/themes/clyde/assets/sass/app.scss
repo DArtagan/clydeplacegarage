@@ -9,18 +9,19 @@ $bootstrap-sass-asset-helper: false;
    Base
    ========================================================================== */
 
-
 /* ==========================================================================
    Header
    ========================================================================== */
 
-$banner-top-margin: 37px;
+$banner-top-margin: 6px;
 $nav-height: 36px; 
+$nav-mobile-height: 50px;
 $logo-height: 150px;
+$content-top-buffer: 10px;
 
 .banner {
     border-top: 1px solid #E7E7E7;
-    margin-top: $banner-top-margin;
+    margin-top: $logo-height / 2 - $nav-height + $banner-top-margin;
     min-height: inherit;
     padding-left: 150px;
 
@@ -56,10 +57,49 @@ a.brand {
     background: url(../img/logo.png) no-repeat;
     position: relative;
     left: -150px;
-    top: -$banner-top-margin;
+    top: -$logo-height / 2 + $nav-height;
     text-indent: -9999px;
     width: 150px;
     height: 150px;
+}
+
+@media (max-width: $screen-xs-max) {
+    .banner {
+        margin-top: $logo-height / 2 - $nav-mobile-height / 2 + $banner-top-margin;
+        padding-left: 10px;
+    }
+
+    a.brand {
+        left: 0px;
+        top: -$logo-height / 2 + $nav-mobile-height / 2;
+    }
+}
+
+$offcanvas-offset: 60%;
+
+@media screen and (max-width: $screen-xs-max) {
+    .row-offcanvas {
+        position: relative;
+        transition: all 0.25s ease-out 0s;
+    }
+    .row-offcanvas-right {
+        right: 0;
+    }
+    .row-offcanvas-right .sidebar-offcanvas {
+        right: 0;
+        transition: all 0.25s ease 0s;
+    }
+    .row-offcanvas-right.active {
+        right: $offcanvas-offset + 15%;
+    }
+    .sidebar-offcanvas {
+        height: 100%;
+        margin: 0px;
+        position: absolute;
+        top: $nav-mobile-height / 2 + $logo-height / 2 + $content-top-buffer;
+        width: $offcanvas-offset;
+        overflow: visible;
+    }
 }
 
 
@@ -68,16 +108,28 @@ a.brand {
    ========================================================================== */
 
 $adminbar-height: 32px;
+$adminbar-mobile-height: 46px;
 
 body.admin-bar {
     .banner {
-        margin-top: $adminbar-height + $banner-top-margin;
+        margin-top: $logo-height / 2 - $nav-height + $banner-top-margin + $adminbar-height;
     }
+
     .content {
-        margin-top: $adminbar-height + $banner-top-margin + $nav-height;
+        margin-top: $logo-height / 2 + $banner-top-margin + $content-top-buffer + $adminbar-height;
     }
+
     &.page-parent .content, &.page-child .content {
-        margin-top: $adminbar-height + $banner-top-margin + $nav-height*2;
+    }
+    
+    @media (max-width: $screen-xs-max) {
+        .banner {
+            margin-top: $logo-height / 2 - $nav-mobile-height / 2 + $banner-top-margin + $adminbar-mobile-height;
+        }
+
+        .content {
+            margin-top: $adminbar-mobile-height + $logo-height - $banner-top-margin + $content-top-buffer;
+        }
     }
 }
 
@@ -90,16 +142,16 @@ body #wpadminbar {
    ========================================================================== */
 
 .content { 
-    margin-top: $banner-top-margin + $nav-height + 20px;
-    margin-left: 150px;
+    margin-top: $logo-height + $banner-top-margin + $content-top-buffer;
+    margin-left: auto;
     
-    @media (max-width: $screen-sm-min) {
-        margin-top: $logo-height + 30px;
-        margin-left: auto;
+    @media (min-width: $screen-md-min) {
+        margin-top: $logo-height / 2 + $banner-top-margin + $content-top-buffer;
+        margin-left: 150px;
     }
 
     body.page-parent &, body.page-child &  {
-        margin: $banner-top-margin + $nav-height*2 -15px 0px 150px;
+        margin-top: $logo-height / 2 + $banner-top-margin + $nav-height + $content-top-buffer;
     }
 
     main.main {
@@ -143,8 +195,17 @@ body #wpadminbar {
 /* Gallery Shortcode */
 .gallery-row { padding: 15px 0; }
 
+.page-header {
+    margin-top: auto;
+}
+
 body.home main.main .page-header {
-    display: none;
+    border: none;
+    padding: 0px;
+    
+    h1 {
+        display: none;
+    }
 }
 
 
