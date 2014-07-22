@@ -101,6 +101,10 @@ $offcanvas-offset: 60%;
         top: 0px;
         width: $offcanvas-offset;
         overflow: visible;
+        
+        nav {
+            background : #ffffff;
+        }
     }
 }
 
