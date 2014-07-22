@@ -12,28 +12,29 @@
       </div>
     </div>
 
-    <nav class="collapse navbar-collapse sidebar-offcanvas showhide" role="navigation">
-      <?php
-        if (has_nav_menu('primary_navigation')) :
-          wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav'));
-        endif;
-      ?>
-      
-    </nav>
-      <?php
-        if (has_nav_menu('primary_navigation')) :
-          if ( is_page() && $post->post_parent ) {
-            $children = wp_list_pages(array('child_of' => $post->post_parent, 'echo' => 0, 'title_li' => null));
-          } else {
-            $children = wp_list_pages(array('child_of' => get_the_ID(), 'echo' => 0, 'title_li' => null));
-          }
-          if ($children) : ?>
-            <nav class="collapse navbar-collapse" role="navigation">
-              <ul id="menu-secondary-navigation" class="nav navbar-nav">
-                <?php echo $children; ?>
-              </ul>
-            </nav>
-          <?php endif; ?>
+    <div class="sidebar-offcanvas">
+      <nav class="collapse navbar-collapse showhide" role="navigation">
+        <?php
+          if (has_nav_menu('primary_navigation')) :
+            wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav'));
+          endif;
+        ?>
+        
+      </nav>
+      <?php if (has_nav_menu('primary_navigation')) :
+        if ( is_page() && $post->post_parent ) {
+          $children = wp_list_pages(array('child_of' => $post->post_parent, 'echo' => 0, 'title_li' => null));
+        } else {
+          $children = wp_list_pages(array('child_of' => get_the_ID(), 'echo' => 0, 'title_li' => null));
+        }
+        if ($children) : ?>
+          <nav class="collapse navbar-collapse showhide" role="navigation">
+            <ul id="menu-secondary-navigation" class="nav navbar-nav">
+              <?php echo $children; ?>
+            </ul>
+          </nav>
         <?php endif; ?>
+      <?php endif; ?>
+    </div>
   </div>
 </header>

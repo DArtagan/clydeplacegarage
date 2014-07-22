@@ -25,7 +25,7 @@ $content-top-buffer: 10px;
     min-height: inherit;
     padding-left: 150px;
 
-    > .container > nav {
+    > .container nav {
         margin: 0px 30px;
 
         &:nth-of-type(even) {
@@ -141,6 +141,15 @@ body #wpadminbar {
    Content
    ========================================================================== */
 
+body.home main.main .page-header {
+    border: none;
+    padding: 0px;
+    
+    h1 {
+        display: none;
+    }
+}
+    
 .content { 
     margin-top: $logo-height + $banner-top-margin + $content-top-buffer;
     margin-left: auto;
@@ -148,13 +157,18 @@ body #wpadminbar {
     @media (min-width: $screen-md-min) {
         margin-top: $logo-height / 2 + $banner-top-margin + $content-top-buffer;
         margin-left: 150px;
+
+        body.page-parent &, body.page-child &  {
+            margin-top: $logo-height / 2 + $banner-top-margin + $nav-height + $content-top-buffer;
+        }
     }
 
-    body.page-parent &, body.page-child &  {
-        margin-top: $logo-height / 2 + $banner-top-margin + $nav-height + $content-top-buffer;
-    }
 
     main.main {
+        .page-header {
+            margin-top: auto;
+        }
+
         .thumbnail, a.thumbnail img {
             max-width: 100%;
             height: auto;
@@ -183,31 +197,10 @@ body #wpadminbar {
             border: none;
             padding: 0px;
         }
+        
+        .gallery-row { padding: 15px 0; }
     }
 }
-
-/* ==========================================================================
-   Primary Content
-   ========================================================================== */
-
-.main { }
-
-/* Gallery Shortcode */
-.gallery-row { padding: 15px 0; }
-
-.page-header {
-    margin-top: auto;
-}
-
-body.home main.main .page-header {
-    border: none;
-    padding: 0px;
-    
-    h1 {
-        display: none;
-    }
-}
-
 
 
 /* ==========================================================================
@@ -215,7 +208,6 @@ body.home main.main .page-header {
    ========================================================================== */
 
 .sidebar { }
-
 
 
 /* ==========================================================================
@@ -229,7 +221,6 @@ body.home main.main .page-header {
 .hentry footer { }
 
 
-
 /* ==========================================================================
    Footer
    ========================================================================== */
@@ -237,7 +228,6 @@ body.home main.main .page-header {
 .content-info {
     margin-top: 50px;
 }
-
 
 
 /* ==========================================================================
@@ -251,13 +241,10 @@ body.home main.main .page-header {
 figure.alignnone { margin-left: 0; margin-right: 0; }
 
 
-
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
 @media (min-width: $screen-sm-min) { }
-
 @media (min-width: $screen-md-min) { }
-
 @media (min-width: $screen-lg-min) { }
