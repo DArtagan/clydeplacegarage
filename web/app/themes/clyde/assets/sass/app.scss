@@ -115,6 +115,7 @@ body #wpadminbar {
         }
 
         .thumbnail, .caption {
+            padding: 9px;
             text-align: left;
         }
 
@@ -129,12 +130,6 @@ body #wpadminbar {
         figure.thumbnail img, div.gallery-cell img, div.gallery-cell a {
             border: none;
             padding: 0px;
-        }
-
-        div.gallery-cell {
-            div.caption {
-                text-align: center;
-            }
         }
     }
 }
