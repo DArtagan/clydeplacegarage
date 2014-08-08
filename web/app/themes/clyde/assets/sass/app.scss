@@ -148,12 +148,18 @@ body #wpadminbar {
    Content
    ========================================================================== */
 
-body.home main.main .page-header {
-    border: none;
-    padding: 0px;
-    
-    h1 {
-        display: none;
+body.home main.main {
+    .page-header {
+        border: none;
+        padding: 0px;
+        
+        h1 {
+            display: none;
+        }
+    }
+
+    .metaslider img {
+        border: none;
     }
 }
     
